@@ -1,0 +1,40 @@
+.animation-business-area {
+    @include section;
+
+    .animate-cnt1 {
+        h2 {
+            @include h2;
+            line-height: 90px;
+
+            @include respond-below(xl) {
+                line-height: 73px !important;
+            }
+
+            @include respond-below(lg) {
+                line-height: 70px !important;
+            }
+
+            @include respond-below(sm) {
+                line-height: 45px !important;
+                margin: 0 0 20px 0;
+            }
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+
+    .animate-cnt-2 {
+
+        h5 {
+            color: red !important;
+            @include h5;
+            font-family: "Montserrat", sans-serif !important;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+}

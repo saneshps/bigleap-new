@@ -1,0 +1,52 @@
+.about-area {
+    @include section;
+
+    .about-first-box {
+        display: flex;
+        justify-self: flex-end;
+        align-items: center;
+
+        @include respond-below(sm) {
+            justify-self: center !important;
+
+        }
+
+        img {
+            width: 80%;
+
+            @include respond-below(sm) {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .about-secont-box {
+        @include respond-below(sm) {
+            padding: 20px 0 0 0 !important;
+        }
+
+        h4 {
+            font-family: montserrat !important;
+            letter-spacing: -1px;
+            @include h4;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.7;
+        }
+    }
+}

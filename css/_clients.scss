@@ -1,0 +1,42 @@
+.client-area {
+    @include section;
+
+    h5 {
+        font-family: "Montserrat", sans-serif !important;
+        text-align: center;
+        @include h5;
+
+    }
+
+    h2 {
+        text-align: center;
+        margin: 30px 0 0 0;
+        @include h2;
+    }
+
+    .special-slider {
+        padding: 40px 0 0 0;
+
+        .clients {
+            img {
+                height: 140px;
+                object-fit: cover;
+                width: 100%;
+                background-color: #fff;
+
+                // @include respond-below(xl) {
+                //     height: 144px !important;
+                // }
+
+                // @include respond-below(lg) {
+                //     height: 144px !important;
+                // }
+
+                // @include respond-below(md) {
+                //     height: 126px !important;
+                // }
+
+            }
+        }
+    }
+}

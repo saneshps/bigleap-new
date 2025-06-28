@@ -1,0 +1,253 @@
+.specialize-area {
+    @include section;
+    position: relative;
+
+    .specialize-bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0.3;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: .5;
+        }
+    }
+
+    h2 {
+        font-size: 100px !important;
+        text-align: center;
+        color: #fff;
+        margin: 0 0 50px 0;
+
+        @include respond-below(xl) {
+            font-size: 80px !important;
+        }
+
+        @include respond-below(lg) {
+            font-size: 60px !important;
+        }
+
+        @include respond-below(md) {
+            font-size: 50px !important;
+        }
+
+        @include respond-below(sm) {
+            font-size: 30px !important;
+            margin: 0 0 20px 0;
+        }
+    }
+
+    h5 {
+        color: #fff;
+        text-align: center;
+        font-family: "Montserrat", sans-serif !important;
+        font-size: 17px;
+        padding: 0 110px;
+        line-height: 26px;
+
+        @include respond-below(lg) {
+            font-size: 17px !important;
+        }
+
+        @include respond-below(md) {
+            font-size: 17px !important;
+            padding: 0;
+        }
+
+        @include respond-below(sm) {
+            font-size: 13px !important;
+            padding: 0;
+        }
+    }
+
+    .special-slider {
+        padding-top: 20px;
+
+        .specialiser {
+            padding: 0 50px 0 50px;
+
+            @include respond-below(sm) {
+                padding: 0px !important;
+            }
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+
+                    img {
+                        width: 60%;
+
+                        @include respond-below(lg) {
+                            width: 100% !important;
+                        }
+
+                        @include respond-below(md) {
+                            width: 90% !important;
+                        }
+
+                        @include respond-below(sm) {
+                            width: 100% !important;
+                        }
+
+                    }
+
+                    h6 {
+                        color: #fff;
+                        font-family: "Montserrat", sans-serif !important;
+                        padding-top: 20px;
+
+                        @include respond-below(md) {
+                            font-size: 20px !important;
+                        }
+
+                        @include respond-below(sm) {
+                            font-size: 20px !important;
+                        }
+                    }
+
+                    a {
+
+                        text-decoration: none;
+                        color: red;
+                        font-size: small;
+
+                        @include respond-below(md) {
+                            font-size: 20px !important;
+                        }
+
+                        @include respond-below(sm) {
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+            }
+
+            // ================================================
+
+            .swiper-button-next.custom-arrow-btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: #ed232a;
+                color: #fff;
+                border: none;
+                border-radius: 40px;
+                box-shadow: -4px 0px 0 0px #fff;
+                padding: 16px 20px;
+                cursor: pointer;
+                width: 60px !important;
+                height: 60px !important;
+                transition:
+                    transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+                    box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+                    background 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .swiper-button-next.custom-arrow-btn:hover {
+                transform: translate(4px);
+                box-shadow: -4px 1px 8px 2px #ce3636;
+                background: #fff;
+
+                &:after {
+                    color: #ed2124;
+                }
+            }
+
+            .swiper-button-next.custom-arrow-btn svg {
+                width: 32px;
+                height: 32px;
+                display: block;
+                stroke: #fff;
+                stroke-width: 4;
+                fill: none;
+            }
+
+            .swiper-button-next.custom-arrow-btn::after {
+                font-size: 16px !important;
+                font-weight: 700 !important;
+                color: #fff;
+            }
+
+
+
+
+            .swiper-button-prev.custom-arrow-btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: #ed232a;
+                color: #fff;
+                border: none;
+                width: 60px !important;
+                height: 60px !important;
+                border-radius: 40px;
+                box-shadow: -4px 0px 0 0px #fff;
+                padding: 16px 20px;
+                cursor: pointer;
+                transition:
+                    transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+                    box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+                    background 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+            }
+
+            .swiper-button-prev.custom-arrow-btn:hover {
+                transform: translate(4px);
+                box-shadow: -4px 1px 8px 2px #ce3636;
+                background: #fff;
+
+                &:after {
+                    color: #ed2124;
+                }
+            }
+
+            .swiper-button-prev.custom-arrow-btn svg {
+                width: 32px;
+                height: 32px;
+                display: block;
+                stroke: #fff;
+                stroke-width: 4;
+                fill: none;
+            }
+
+
+            .swiper-button-prev.custom-arrow-btn::after {
+                font-size: 16px !important;
+                font-weight: 700 !important;
+                color: #fff;
+            }
+
+
+
+            // ================================================
+        }
+    }
+
+    .special-btn-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+}
