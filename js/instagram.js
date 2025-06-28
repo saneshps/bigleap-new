@@ -1,4 +1,4 @@
-var swiper = new Swiper(".clients", {
+var swiper = new Swiper(".instagram", {
   spaceBetween: 30,
   autoplay: {
     delay: 2500,
@@ -17,7 +17,7 @@ var swiper = new Swiper(".clients", {
       slidesPerView: 2,
       spaceBetween: 10,
     },
-    640: {
+     640: {
       slidesPerView: 2,
       spaceBetween: 10,
     },
@@ -30,11 +30,11 @@ var swiper = new Swiper(".clients", {
       spaceBetween: 20,
     },
     1366: {
-      slidesPerView: 9,
-      spaceBetween: 10,
+      slidesPerView: 6,
+      spaceBetween: 0,
     },
     1920: {
-      slidesPerView: 9,
+      slidesPerView: 4,
       spaceBetween: 10,
     },
   },

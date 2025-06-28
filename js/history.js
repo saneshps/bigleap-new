@@ -1,4 +1,4 @@
-var swiper = new Swiper(".clients", {
+var swiper = new Swiper(".history", {
   spaceBetween: 30,
   autoplay: {
     delay: 2500,
@@ -15,26 +15,26 @@ var swiper = new Swiper(".clients", {
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 20,
     },
-    640: {
+     640: {
       slidesPerView: 2,
       spaceBetween: 10,
     },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 10,
+      slidesPerView: 3,
+      spaceBetween: 0,
     },
     1024: {
       slidesPerView: 5,
       spaceBetween: 20,
     },
     1366: {
-      slidesPerView: 9,
-      spaceBetween: 10,
+      slidesPerView: 6,
+      spaceBetween: 0,
     },
     1920: {
-      slidesPerView: 9,
+      slidesPerView: 4,
       spaceBetween: 10,
     },
   },

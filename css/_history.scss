@@ -1,0 +1,62 @@
+.history-area {
+    padding: 120px 0 80px 0;
+    position: relative;
+
+    h2 {
+        color: #fff;
+        text-align: center;
+    }
+
+    p {
+        color: #fff;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    hr {
+        border: 0.5px solid red;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 56%;
+        bottom: 0;
+
+        @include respond-below(xl) {
+            // top: 66% !important;
+        }
+    }
+
+
+    .special-slider {
+        .history {
+            .swiper-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .swiper-slide {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 0 !important;
+
+                    img {
+                        width: 60%;
+
+                        @include respond-below(xl) {
+                            width: 70% !important;
+                        }
+                    }
+
+                    h6 {
+                        padding-top: 15px;
+                        color: #fff;
+                        font-size: 10px;
+                    }
+
+                }
+            }
+        }
+    }
+}

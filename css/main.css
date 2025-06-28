@@ -1316,4 +1316,392 @@ h6 {
 .footer-area .footer-bottom .footer-copy-right li a:hover {
   text-decoration: none;
   color: #ff0106;
+}
+
+.faq-area {
+  padding: 180px 0 80px 0;
+}
+.faq-area h2 {
+  color: #fff;
+}
+@media (max-width: 1599px) {
+  .faq-area h2 {
+    line-height: 50px !important;
+  }
+}
+@media (max-width: 1199px) {
+  .faq-area h2 {
+    padding-bottom: 25px !important;
+    text-align: center !important;
+  }
+}
+@media (max-width: 991px) {
+  .faq-area h2 {
+    padding-bottom: 25px !important;
+    text-align: center !important;
+  }
+}
+@media (max-width: 639px) {
+  .faq-area h2 {
+    text-align: center !important;
+    padding-bottom: 30px !important;
+    line-height: 55px !important;
+  }
+}
+.faq-area .faq-box .accordion {
+  width: 100%;
+  position: relative;
+}
+.faq-area .faq-box .accordian-chk {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -khtml-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0 20px;
+  z-index: 2;
+  margin: 0px;
+}
+.faq-area .faq-box .accordion h3 {
+  background: #eb2729 none;
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: arial;
+  margin: 0;
+  z-index: 1;
+  font-family: arial !important;
+}
+.faq-area .faq-box .accordion h3 .acc-icon {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid transparent;
+}
+.faq-area .faq-box .accordion .accordian-chk:checked + h3 > .acc-icon {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  border-top: 5px solid transparent;
+  top: 10px;
+}
+.faq-area .faq-box .accordion .accordian-chk:checked + h3 + div.accordian-content {
+  opacity: 1;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  max-height: 1000px;
+  overflow: hidden;
+  padding: 15px;
+}
+.faq-area .faq-box .accordian-content {
+  opacity: 0;
+  padding: 15px;
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  margin-bottom: 2px;
+}
+.faq-area .faq-box .accordian-content p {
+  color: #fff;
+}
+
+.instagram-area {
+  position: relative;
+  padding-bottom: 80px;
+}
+.instagram-area .instagram-icon {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 999;
+}
+@media (max-width: 1599px) {
+  .instagram-area .instagram-icon {
+    left: 47% !important;
+    top: 23% !important;
+  }
+}
+@media (max-width: 1199px) {
+  .instagram-area .instagram-icon {
+    left: 45% !important;
+    top: 19% !important;
+  }
+}
+@media (max-width: 991px) {
+  .instagram-area .instagram-icon {
+    left: 44% !important;
+    top: 18% !important;
+  }
+}
+@media (max-width: 639px) {
+  .instagram-area .instagram-icon {
+    left: 38% !important;
+    top: 18% !important;
+  }
+}
+.instagram-area .instagram-icon img {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 50%;
+}
+.instagram-area .special-slider {
+  position: relative;
+}
+.instagram-area .special-slider .instagram .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+
+.hero-section .about-sect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 30px;
+}
+.hero-section .abt-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section .abt-img img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .hero-section .abt-img img {
+    width: 70% !important;
+  }
+}
+@media (max-width: 639px) {
+  .hero-section .abt-img img {
+    width: 90% !important;
+  }
+}
+.hero-section .abt-cnt {
+  padding: 0 100px 0 30px;
+}
+@media (max-width: 1199px) {
+  .hero-section .abt-cnt {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 991px) {
+  .hero-section .abt-cnt {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 639px) {
+  .hero-section .abt-cnt {
+    padding: 0 !important;
+  }
+}
+.hero-section h4 {
+  color: #fff;
+  line-height: 38px;
+  font-size: 25px;
+}
+@media (max-width: 1199px) {
+  .hero-section h4 {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 991px) {
+  .hero-section h4 {
+    line-height: 37px !important;
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 639px) {
+  .hero-section h4 {
+    line-height: 30px !important;
+    font-size: 20px !important;
+  }
+}
+.hero-section p {
+  color: #a9a3a3;
+  font-size: small;
+  text-align: justify;
+}
+@media (max-width: 1599px) {
+  .hero-section p {
+    text-align: justify !important;
+  }
+}
+@media (max-width: 639px) {
+  .hero-section p {
+    text-align: left !important;
+  }
+}
+
+.history-area {
+  padding: 120px 0 80px 0;
+  position: relative;
+}
+.history-area h2 {
+  color: #fff;
+  text-align: center;
+}
+.history-area p {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.history-area hr {
+  border: 0.5px solid red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 56%;
+  bottom: 0;
+}
+.history-area .special-slider .history .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.history-area .special-slider .history .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0 !important;
+}
+.history-area .special-slider .history .swiper-wrapper .swiper-slide img {
+  width: 60%;
+}
+@media (max-width: 1599px) {
+  .history-area .special-slider .history .swiper-wrapper .swiper-slide img {
+    width: 70% !important;
+  }
+}
+.history-area .special-slider .history .swiper-wrapper .swiper-slide h6 {
+  padding-top: 15px;
+  color: #fff;
+  font-size: 10px;
+}
+
+.team-area h2 {
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1599px) {
+  .team-area .team-member {
+    padding: 0 0 130px 0 !important;
+  }
+}
+@media (max-width: 1199px) {
+  .team-area .team-member {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 991px) {
+  .team-area .team-member {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 639px) {
+  .team-area .team-member {
+    padding: 0 !important;
+  }
+}
+.team-area .team-member .teams {
+  padding-top: 20px;
+}
+.team-area .team-member .teams img {
+  width: 100%;
+}
+
+.service-header-area .service-box {
+  padding: 0 130px 0 160px;
+}
+@media (max-width: 1199px) {
+  .service-header-area .service-box {
+    padding: 0 40px 0 40px !important;
+  }
+}
+@media (max-width: 991px) {
+  .service-header-area .service-box {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 639px) {
+  .service-header-area .service-box {
+    padding: 0 !important;
+  }
+}
+.service-header-area .service-box .image img {
+  width: 80%;
+}
+@media (max-width: 1199px) {
+  .service-header-area .service-box .image img {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .service-header-area .service-box .image img {
+    width: 100%;
+  }
+}
+@media (max-width: 639px) {
+  .service-header-area .service-box .image img {
+    width: 100%;
+  }
+}
+.service-header-area .service-box .content h4 {
+  color: #fff;
+  line-height: 50px;
+}
+.service-header-area .service-box .content p {
+  color: #b1b1b1;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.service-provide-area {
+  padding: 120px 0 80px 0;
+}
+.service-provide-area h2 {
+  color: #fff;
+  text-align: center;
+}
+.service-provide-area .services-items {
+  padding: 40px 60px;
+}
+@media (max-width: 639px) {
+  .service-provide-area .services-items {
+    padding: 0 !important;
+  }
+}
+.service-provide-area .services-items .image {
+  padding-top: 30px;
+}
+.service-provide-area .services-items .image img {
+  width: 100%;
+}
+.service-provide-area .services-items .image h6 {
+  color: #fff;
+  padding-top: 20px;
+}
+.service-provide-area .services-items .image a {
+  text-decoration: none;
+  color: #d20c0c;
 }/*# sourceMappingURL=main.css.map */
