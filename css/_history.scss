@@ -1,33 +1,60 @@
 .history-area {
-    padding: 120px 0 80px 0;
+    @include section;
     position: relative;
 
-    h2 {
-        color: #fff;
-        text-align: center;
+    .history-head {
+        h2 {
+            @include h2;
+            text-align: center;
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            padding: 0 200px;
+            margin-top: 20px;
+
+            @include respond-below(xl) {
+                padding: 0 100px;
+            }
+
+            @include respond-below(lg) {
+                padding: 0 80px;
+            }
+
+            @include respond-below(md) {
+                padding: 0 20px;
+            }
+
+            @include respond-below(sm) {
+                padding: 0 10px;
+            }
+        }
     }
 
-    p {
-        color: #fff;
-        text-align: center;
-        padding-bottom: 30px;
-    }
+
 
     hr {
-        border: 0.5px solid red;
+        height: 1px;
+        width: 100%;
+        background-color: red;
         position: absolute;
         left: 0;
         right: 0;
-        top: 56%;
+        top: 59%;
         bottom: 0;
 
         @include respond-below(xl) {
-            // top: 66% !important;
+            top: 60%;
         }
     }
 
 
     .special-slider {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px 0;
+
         .history {
             .swiper-wrapper {
                 display: flex;
@@ -51,8 +78,12 @@
 
                     h6 {
                         padding-top: 15px;
+                        @include h6;
+                        font-family: montserrat !important;
+                    }
+
+                    p {
                         color: #fff;
-                        font-size: 10px;
                     }
 
                 }

@@ -1,7 +1,10 @@
 .team-area {
+    @include section;
+
     h2 {
-        color: #fff;
+        @include h2;
         text-align: center;
+        margin-bottom: 30px;
     }
 
     .team-member {

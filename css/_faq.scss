@@ -1,11 +1,12 @@
 .faq-area {
-    padding: 180px 0 80px 0;
+    @include section;
 
     h2 {
-        color: #fff;
+        @include h2;
+        line-height: 86px;
 
         @include respond-below(xl) {
-            line-height: 50px !important;
+            line-height: 70px !important;
         }
 
         @include respond-below(lg) {
@@ -54,16 +55,18 @@
 
         .accordion h3 {
             background: #eb2729 none;
-            // border: 1px solid #3175c4 !important;
             position: relative;
             padding: 20px;
             color: #fff;
             font-size: 16px;
-            font-weight: normal;
-            font-family: arial;
             margin: 0;
             z-index: 1;
-            font-family: arial !important;
+            font-family: montserrat !important;
+
+            @include respond-below(sm) {
+                padding: 8px 20px 10px 10px;
+                line-height: 26px;
+            }
         }
 
         .accordion h3 .acc-icon {
@@ -99,6 +102,7 @@
             max-height: 1000px;
             overflow: hidden;
             padding: 15px;
+            border: 1px solid #787878;
         }
 
         .accordian-content {

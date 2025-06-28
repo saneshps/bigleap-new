@@ -1,21 +1,10 @@
-.service-header-area {
+.service-main-area {
+    @include section;
+
     .service-box {
-        padding: 0 130px 0 160px;
-
-        @include respond-below(lg) {
-            padding: 0 40px 0 40px !important;
-
-        }
-
-        @include respond-below(md) {
-            padding: 0 !important;
-
-        }
-
-        @include respond-below(sm) {
-            padding: 0 !important;
-
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .image {
             img {
@@ -27,7 +16,7 @@
                 }
 
                 @include respond-below(md) {
-                    width: 100%;
+                    width: 60%;
 
                 }
 
@@ -40,7 +29,7 @@
 
         .content {
             h4 {
-                color: #fff;
+                @include h4;
                 line-height: 50px;
 
             }
@@ -53,3 +42,42 @@
         }
     }
 }
+
+// ========================  ========================== Start
+.service-provide-area {
+    @include section;
+
+    h2 {
+        @include h2;
+        text-align: center;
+    }
+
+    .services-items {
+        padding: 40px 60px;
+
+        @include respond-below(sm) {
+            padding: 0 !important;
+        }
+
+        .image {
+            padding-top: 30px;
+
+            img {
+                width: 100%;
+            }
+
+            h6 {
+                @include h6;
+                padding-top: 20px;
+                font-family: montserrat !important;
+            }
+
+            a {
+                text-decoration: none;
+                color: #d20c0c;
+            }
+        }
+    }
+}
+
+// ========================  ========================== End

@@ -50,3 +50,71 @@
         }
     }
 }
+
+
+// ====================================== ABOUT PAGE START =======================================
+.about-main-section {
+    @include section;
+
+    .about-sect {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .abt-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+
+            @include respond-below(md) {
+                width: 70% !important;
+            }
+
+            @include respond-below(sm) {
+                width: 90% !important;
+            }
+
+        }
+    }
+
+
+    .abt-cnt {
+        h4 {
+            @include h4;
+            line-height: 50px;
+
+            @include respond-below(lg) {
+                line-height: 50px;
+            }
+
+            @include respond-below(md) {
+                line-height: 50px;
+            }
+
+            @include respond-below(sm) {
+                line-height: 40px;
+            }
+        }
+
+        p {
+            color: #dedede;
+
+            @include respond-below(xl) {
+                text-align: justify !important;
+            }
+
+            @include respond-below(sm) {
+                text-align: left !important;
+            }
+
+        }
+    }
+
+
+}
+
+// ====================================== ABOUT PAGE END =========================================
