@@ -1,0 +1,107 @@
+.watch-area {
+    .first-video {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+
+        @include respond-below(lg) {
+            flex-direction: row;
+        }
+
+        @include respond-below(md) {
+            align-items: normal;
+            flex-direction: column;
+        }
+
+        @include respond-below(sm) {
+            flex-direction: column;
+        }
+
+        .video1 {
+            @include respond-below(lg) {
+                width: 100%;
+            }
+
+            video {
+                width: 100%;
+
+            }
+        }
+
+        .video2 {
+            width: 70%; // You can adjust the size here
+
+            @include respond-below(xl) {
+                width: 80%;
+            }
+
+            @include respond-below(lg) {
+                width: 100%;
+            }
+
+            @include respond-below(md) {
+                width: 100%;
+            }
+
+            @include respond-below(sm) {
+                width: 100%;
+            }
+
+            video {
+                width: 100%;
+                height: auto;
+
+            }
+        }
+    }
+
+    .second-video {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 100%;
+
+        @include respond-below(lg) {
+            flex-direction: row;
+            padding-top: 40px;
+        }
+
+        @include respond-below(md) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        @include respond-below(sm) {
+            flex-direction: column;
+        }
+
+        .content {
+            padding-top: 80px;
+
+            @include respond-below(sm) {
+                padding-top: 20px;
+            }
+
+            h6 {
+                color: #fff;
+            }
+
+            h2 {
+                color: #fff;
+            }
+
+        }
+
+        .video3 {
+            video {
+                width: 100%;
+            }
+        }
+
+
+    }
+
+}
