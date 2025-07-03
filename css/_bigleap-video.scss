@@ -1,0 +1,125 @@
+.bigleap-video-area {
+    position: relative;
+    @include section;
+
+    .bigleap {
+        .swiper-wrapper {
+            .swiper-slide {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                @include respond-below(md) {
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                @include respond-below(sm) {
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .content {
+                    position: absolute;
+                    left: 70px;
+                    right: 0;
+                    padding-top: 180px;
+
+                    @include respond-below(xl) {
+                        padding-top: 0;
+                        left: 0;
+                    }
+
+                    @include respond-below(lg) {
+                        padding-top: 0;
+                    }
+
+                    @include respond-below(md) {
+                        position: unset
+                    }
+
+                    @include respond-below(sm) {
+                        position: unset
+                    }
+
+                    h6 {
+                        @include h6;
+                    }
+
+                    h2 {
+                        @include h2;
+                        width: 50%;
+                        line-height: 80px;
+
+                        @include respond-below(md) {
+                            width: auto;
+                            line-height: 50px;
+                        }
+
+                        @include respond-below(sm) {
+                            width: auto;
+                            line-height: 50px;
+                        }
+
+                    }
+
+                    p {
+                        @include p;
+                        width: 43%;
+
+                        @include respond-below(md) {
+                            width: auto;
+                        }
+
+                        @include respond-below(sm) {
+                            width: 100%;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+                .videos {
+                    // padding-left: 350px;
+
+                    @include respond-below(lg) {
+                        padding-left: 0;
+                    }
+
+                    @include respond-below(md) {
+                        padding-left: 0;
+                    }
+
+                    iframe {
+                        width: 780px;
+                        height: 515px;
+
+                        @include respond-below(xl) {
+                            width: 780px;
+
+                        }
+
+                        @include respond-below(lg) {
+                            width: 720px;
+                            height: 475px;
+                        }
+
+                        @include respond-below(md) {
+                            width: 670px;
+                            height: 385px;
+
+                        }
+
+                        @include respond-below(sm) {
+                            width: 350px;
+                            height: 345px;
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
