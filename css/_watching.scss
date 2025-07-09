@@ -46,13 +46,7 @@
         .video2 {
             width: 70%; // You can adjust the size here
 
-            // @include respond-below(xl) {
-            //     width: 80%;
-            // }
-
-            // @include respond-below(lg) {
-            //     width: 100%;
-            // }
+            
 
             @include respond-below(md) {
                 width: 100%;

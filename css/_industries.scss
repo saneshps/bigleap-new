@@ -1,0 +1,60 @@
+.industries-area {
+    padding: 120px 0;
+
+    .headings {
+        text-align: center;
+        @include respond-below(lg) {
+            padding: 0 190px;
+
+        }
+         @include respond-below(md) {
+            padding: 0 100px;
+
+        }
+        @include respond-below(sm) {
+            padding: 0 0;
+
+        }
+
+        h2 {
+            @include h2;
+        }
+
+        p {
+            @include p;
+        }
+    }
+
+
+    .lists {
+         @include respond-below(sm) {
+            padding: 0 40px;
+
+        }
+
+        @include respond-below(sm) {
+            padding: 0 20px 0 20px;
+
+        }
+
+        .content {
+            justify-content: center;
+            display: flex;
+            padding: 20px 0;
+
+            ul {
+                color: #fff;
+
+                
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+    }
+}

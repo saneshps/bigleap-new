@@ -2106,6 +2106,8 @@ h6 {
 
 .team-area {
   padding: 120px 0 50px 0;
+  /* Anchor will cover the whole item by default */
+  /* For some effects it will show as a button */
 }
 @media (max-width: 1599px) {
   .team-area {
@@ -2154,31 +2156,132 @@ h6 {
     font-size: 1.8rem;
   }
 }
+.team-area .grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
 @media (max-width: 1599px) {
-  .team-area .team-member {
+  .team-area .grid {
     padding: 0 0 130px 0 !important;
   }
 }
 @media (max-width: 1199px) {
-  .team-area .team-member {
+  .team-area .grid {
     padding: 0 !important;
   }
 }
 @media (max-width: 991px) {
-  .team-area .team-member {
+  .team-area .grid {
     padding: 0 !important;
   }
 }
 @media (max-width: 639px) {
-  .team-area .team-member {
+  .team-area .grid {
     padding: 0 !important;
   }
 }
-.team-area .team-member .teams {
-  padding-top: 20px;
+.team-area .grid .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.team-area .team-member .teams img {
+.team-area .grid .content h6 {
+  color: #fff;
+}
+.team-area .grid .content p {
+  color: #fff;
+}
+.team-area .grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
   width: 100%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+.team-area .grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  opacity: 0.8;
+  width: 100%;
+}
+.team-area .grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  backface-visibility: hidden;
+}
+.team-area .grid figure figcaption::before,
+.team-area .grid figure figcaption::after {
+  pointer-events: none;
+}
+.team-area .grid figure figcaption,
+.team-area .grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.team-area .grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.team-area .grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+.team-area .grid figure h2 span {
+  font-weight: 800;
+}
+.team-area .grid figure h2,
+.team-area .grid figure p {
+  margin: 0;
+}
+.team-area .grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+.team-area figure.effect-selena {
+  background: #fff;
+}
+.team-area figure.effect-selena img {
+  opacity: 0.95;
+  transition: transform 0.35s;
+  transform-origin: 50% 50%;
+}
+.team-area figure.effect-selena:hover img {
+  transform: scale3d(0.95, 0.95, 1);
+}
+.team-area figure.effect-selena h2 {
+  transition: transform 0.35s;
+  transform: translate3d(0, 20px, 0);
+}
+.team-area figure.effect-selena p {
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+  transform-origin: 50% 0%;
+}
+.team-area figure.effect-selena:hover h2 {
+  transform: translate3d(0, 0, 0);
+}
+.team-area figure.effect-selena:hover p {
+  opacity: 1;
+  transform: perspective(1000px) rotate3d(1, 0, 0, 0);
 }
 
 .service-main-area {
@@ -2260,6 +2363,13 @@ h6 {
 
 .service-provide-area {
   padding: 120px 0 50px 0;
+  /* Common style */
+  /* Anchor will cover the whole item by default */
+  /* For some effects it will show as a button */
+  /* Individual effects */
+  /*---------------*/
+  /***** Julia *****/
+  /*---------------*/
 }
 @media (max-width: 1599px) {
   .service-provide-area {
@@ -2282,72 +2392,460 @@ h6 {
   }
 }
 .service-provide-area h2 {
+  color: #fff;
+  text-align: center;
+}
+.service-provide-area .grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1100px;
+  list-style: none;
+  text-align: center;
+}
+.service-provide-area .grid h6 {
+  color: #fff;
+}
+.service-provide-area .grid .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 991px) {
+  .service-provide-area .grid .content {
+    align-items: center;
+  }
+}
+.service-provide-area .grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 100%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+.service-provide-area .grid figure img {
+  position: relative;
+  display: block;
+  opacity: 0.8;
+}
+.service-provide-area .grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  backface-visibility: hidden;
+}
+.service-provide-area .grid figure figcaption .list {
+  padding: 90px 0 90px 0;
+}
+.service-provide-area .grid figure figcaption::before,
+.service-provide-area .grid figure figcaption::after {
+  pointer-events: none;
+}
+.service-provide-area .grid figure figcaption,
+.service-provide-area .grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.service-provide-area .grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.service-provide-area .grid figure h3 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+.service-provide-area .grid figure h3 span {
+  font-weight: 800;
+}
+.service-provide-area .grid figure h3,
+.service-provide-area .grid figure p {
+  margin: 0;
+}
+.service-provide-area .grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+.service-provide-area figure.effect-julia {
+  background: #2f3238;
+}
+.service-provide-area figure.effect-julia img {
+  height: 400px;
+  width: 100%;
+  transition: opacity 1s, transform 1s;
+  backface-visibility: hidden;
+}
+.service-provide-area figure.effect-julia figcaption {
+  text-align: left;
+}
+.service-provide-area figure.effect-julia h3 {
+  position: relative;
+  padding: 0.5em 0;
+}
+.service-provide-area figure.effect-julia p {
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 0 0 0.25em;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 75%;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-360px, 0, 0);
+}
+.service-provide-area figure.effect-julia p:first-child {
+  transition-delay: 0.15s;
+}
+.service-provide-area figure.effect-julia p:nth-of-type(2) {
+  transition-delay: 0.1s;
+}
+.service-provide-area figure.effect-julia p:nth-of-type(3) {
+  transition-delay: 0.05s;
+}
+.service-provide-area figure.effect-julia:hover p:first-child {
+  transition-delay: 0s;
+}
+.service-provide-area figure.effect-julia:hover p:nth-of-type(2) {
+  transition-delay: 0.05s;
+}
+.service-provide-area figure.effect-julia:hover p:nth-of-type(3) {
+  transition-delay: 0.1s;
+}
+.service-provide-area figure.effect-julia:hover img {
+  opacity: 0.4;
+  transform: scale3d(1.1, 1.1, 1);
+}
+.service-provide-area figure.effect-julia:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.paragraph-area {
+  padding: 120px 0;
+}
+.paragraph-area .paragraph {
+  padding: 0 60px;
+}
+@media (max-width: 1199px) {
+  .paragraph-area .paragraph {
+    padding: 0 0;
+  }
+}
+@media (max-width: 991px) {
+  .paragraph-area .paragraph {
+    padding: 0 0;
+  }
+}
+@media (max-width: 639px) {
+  .paragraph-area .paragraph {
+    padding: 0 0;
+  }
+}
+.paragraph-area .paragraph .para-head h2 {
   font-size: 3.5rem;
   color: #fff;
   font-weight: 400;
+  line-height: 70px;
   text-align: center;
 }
 @media (max-width: 1599px) {
-  .service-provide-area h2 {
+  .paragraph-area .paragraph .para-head h2 {
     font-size: 3rem;
   }
 }
 @media (max-width: 1199px) {
-  .service-provide-area h2 {
+  .paragraph-area .paragraph .para-head h2 {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 991px) {
-  .service-provide-area h2 {
+  .paragraph-area .paragraph .para-head h2 {
     font-size: 2.1rem;
   }
 }
 @media (max-width: 639px) {
-  .service-provide-area h2 {
+  .paragraph-area .paragraph .para-head h2 {
     font-size: 1.8rem;
   }
 }
-.service-provide-area .services-items {
-  padding: 40px 60px;
+@media (max-width: 991px) {
+  .paragraph-area .paragraph .para-head h2 {
+    text-align: center;
+  }
 }
 @media (max-width: 639px) {
-  .service-provide-area .services-items {
-    padding: 0 !important;
+  .paragraph-area .paragraph .para-head h2 {
+    line-height: 50px;
+    text-align: left;
   }
 }
-.service-provide-area .services-items .image {
-  padding-top: 30px;
+.paragraph-area .paragraph .para-content {
+  padding: 20px 0;
 }
-.service-provide-area .services-items .image img {
-  width: 100%;
-}
-.service-provide-area .services-items .image h6 {
-  font-size: 1rem;
+.paragraph-area .paragraph .para-content p {
   color: #fff;
-  padding-top: 20px;
-  font-family: montserrat !important;
-}
-@media (max-width: 1599px) {
-  .service-provide-area .services-items .image h6 {
-    font-size: 1rem;
-  }
+  line-height: 26px;
+  text-align: center;
 }
 @media (max-width: 1199px) {
-  .service-provide-area .services-items .image h6 {
-    font-size: 1rem;
+  .paragraph-area .paragraph .para-content p {
+    padding-top: 10px;
   }
 }
 @media (max-width: 991px) {
-  .service-provide-area .services-items .image h6 {
-    font-size: 15px;
+  .paragraph-area .paragraph .para-content p {
+    text-align: left;
   }
 }
 @media (max-width: 639px) {
-  .service-provide-area .services-items .image h6 {
-    font-size: 15px;
+  .paragraph-area .paragraph .para-content p {
+    text-align: left;
   }
 }
-.service-provide-area .services-items .image a {
+
+.industries-area {
+  padding: 120px 0;
+}
+.industries-area .headings {
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .industries-area .headings {
+    padding: 0 190px;
+  }
+}
+@media (max-width: 991px) {
+  .industries-area .headings {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 639px) {
+  .industries-area .headings {
+    padding: 0 0;
+  }
+}
+.industries-area .headings h2 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 400;
+}
+@media (max-width: 1599px) {
+  .industries-area .headings h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1199px) {
+  .industries-area .headings h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .industries-area .headings h2 {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 639px) {
+  .industries-area .headings h2 {
+    font-size: 1.8rem;
+  }
+}
+.industries-area .headings p {
+  color: #fff;
+  line-height: 26px;
+}
+@media (max-width: 639px) {
+  .industries-area .lists {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 639px) {
+  .industries-area .lists {
+    padding: 0 20px 0 20px;
+  }
+}
+.industries-area .lists .content {
+  justify-content: center;
+  display: flex;
+  padding: 20px 0;
+}
+.industries-area .lists .content ul {
+  color: #fff;
+}
+.industries-area .lists .content ul li a {
   text-decoration: none;
-  color: #d20c0c;
+  color: #fff;
+}
+
+.blogs-area {
+  padding: 120px 0 80px 0;
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 400;
+  /* Common style */
+  /* Anchor will cover the whole item by default */
+  /* For some effects it will show as a button */
+  /* Individual effects */
+  /*---------------*/
+  /***** Lily *****/
+  /*---------------*/
+}
+@media (max-width: 1599px) {
+  .blogs-area {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1199px) {
+  .blogs-area {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .blogs-area {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 639px) {
+  .blogs-area {
+    font-size: 1.8rem;
+  }
+}
+.blogs-area h2 {
+  text-align: center;
+}
+.blogs-area .grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+.blogs-area .grid .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 991px) {
+  .blogs-area .grid .contents {
+    align-items: center;
+  }
+}
+.blogs-area .grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 100%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+.blogs-area .grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+.blogs-area .grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  backface-visibility: hidden;
+}
+.blogs-area .grid figure figcaption::before,
+.blogs-area .grid figure figcaption::after {
+  pointer-events: none;
+}
+.blogs-area .grid figure figcaption,
+.blogs-area .grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.blogs-area .grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.blogs-area .grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+.blogs-area .grid figure h2 span {
+  font-weight: 800;
+}
+.blogs-area .grid figure h2,
+.blogs-area .grid figure p {
+  margin: 0;
+}
+.blogs-area .grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+.blogs-area figure.effect-lily img {
+  max-width: none;
+  width: calc(100% + 50px);
+  opacity: 0.7;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-40px, 0, 0);
+}
+.blogs-area figure.effect-lily figcaption {
+  text-align: left;
+}
+.blogs-area figure.effect-lily figcaption > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  height: 50%;
+}
+.blogs-area figure.effect-lily h2,
+.blogs-area figure.effect-lily p {
+  transform: translate3d(0, 40px, 0);
+}
+.blogs-area figure.effect-lily h2 {
+  transition: transform 0.35s;
+}
+.blogs-area figure.effect-lily p {
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.35s;
+}
+.blogs-area figure.effect-lily:hover img,
+.blogs-area figure.effect-lily:hover p {
+  opacity: 1;
+}
+.blogs-area figure.effect-lily:hover img,
+.blogs-area figure.effect-lily:hover h2,
+.blogs-area figure.effect-lily:hover p {
+  transform: translate3d(0, 0, 0);
+}
+.blogs-area figure.effect-lily:hover p {
+  transition-delay: 0.05s;
+  transition-duration: 0.35s;
 }/*# sourceMappingURL=main.css.map */
