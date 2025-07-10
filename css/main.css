@@ -1562,6 +1562,101 @@ h6 {
   color: #fff;
 }
 
+.enquiry-area .enquire-bg {
+  position: relative;
+}
+.enquiry-area .enquire-bg img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1199px) {
+  .enquiry-area .enquire-bg img {
+    height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .enquiry-area .enquire-bg img {
+    height: auto;
+  }
+}
+@media (max-width: 639px) {
+  .enquiry-area .enquire-bg img {
+    height: auto;
+  }
+}
+.enquiry-area .enquire-bg .btn {
+  position: absolute;
+  bottom: 0;
+  left: 600px;
+  top: 40%;
+  padding: 2em;
+  height: 50%;
+}
+@media (max-width: 1199px) {
+  .enquiry-area .enquire-bg .btn {
+    left: 400px;
+  }
+}
+@media (max-width: 991px) {
+  .enquiry-area .enquire-bg .btn {
+    left: 250px;
+    top: 35%;
+  }
+}
+@media (max-width: 639px) {
+  .enquiry-area .enquire-bg .btn {
+    top: 50px;
+    left: 80px;
+  }
+}
+.enquiry-area .fade .modal-width {
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 1599px) {
+  .enquiry-area .fade .modal-width {
+    width: 80%;
+  }
+}
+@media (max-width: 1199px) {
+  .enquiry-area .fade .modal-width {
+    width: 80%;
+  }
+}
+@media (max-width: 991px) {
+  .enquiry-area .fade .modal-width {
+    width: 90%;
+  }
+}
+@media (max-width: 639px) {
+  .enquiry-area .fade .modal-width {
+    width: 90%;
+  }
+}
+.enquiry-area .fade .modal-width .modal-content .modal-body .inputt {
+  padding: 40px 20px;
+}
+@media (max-width: 639px) {
+  .enquiry-area .fade .modal-width .modal-content .modal-body .inputt {
+    padding: 20px 20px;
+  }
+}
+.enquiry-area .fade .modal-width .modal-content .modal-body .inputt form input {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+.enquiry-area .fade .modal-width .modal-content .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-area {
   padding: 120px 0 50px 0;
   position: relative;
@@ -2395,27 +2490,36 @@ h6 {
   color: #fff;
   text-align: center;
 }
+@media (max-width: 639px) {
+  .service-provide-area h2 {
+    line-height: 50px;
+  }
+}
 .service-provide-area .grid {
   position: relative;
   clear: both;
   margin: 0 auto;
   padding: 1em 0 4em;
-  max-width: 1100px;
   list-style: none;
   text-align: center;
 }
 .service-provide-area .grid h6 {
   color: #fff;
+  padding-top: 10px;
 }
 .service-provide-area .grid .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 20px 0 20px 0;
 }
 @media (max-width: 991px) {
   .service-provide-area .grid .content {
     align-items: center;
   }
+}
+.service-provide-area .grid .content .btn {
+  margin: 10px 0 20px 0 !important;
 }
 .service-provide-area .grid figure {
   position: relative;
@@ -2731,7 +2835,6 @@ h6 {
   position: relative;
   margin: 0 auto;
   padding: 1em 0 4em;
-  max-width: 1000px;
   list-style: none;
   text-align: center;
 }
@@ -2739,11 +2842,15 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 20px 50px;
 }
 @media (max-width: 991px) {
   .blogs-area .grid .contents {
     align-items: center;
   }
+}
+.blogs-area .grid .contents .btn {
+  margin: 10px 0 20px 0 !important;
 }
 .blogs-area .grid figure {
   position: relative;
@@ -2751,12 +2858,21 @@ h6 {
   overflow: hidden;
   margin: 10px 1%;
   min-width: 320px;
-  max-width: 480px;
-  max-height: 360px;
+  height: 450px;
   width: 100%;
   background: #3085a3;
   text-align: center;
   cursor: pointer;
+}
+@media (max-width: 1199px) {
+  .blogs-area .grid figure {
+    height: 360px;
+  }
+}
+@media (max-width: 639px) {
+  .blogs-area .grid figure {
+    height: 360px;
+  }
 }
 .blogs-area .grid figure img {
   position: relative;
@@ -2780,9 +2896,9 @@ h6 {
 .blogs-area .grid figure figcaption > a {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10%;
   width: 100%;
-  height: 100%;
+  height: 70%;
 }
 .blogs-area .grid figure figcaption > a {
   z-index: 1000;
@@ -2832,7 +2948,9 @@ h6 {
   transition: transform 0.35s;
 }
 .blogs-area figure.effect-lily p {
-  color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 25px;
+  font-weight: 500;
   opacity: 0;
   transition: opacity 0.2s, transform 0.35s;
 }
