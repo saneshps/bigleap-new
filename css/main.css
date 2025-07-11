@@ -2795,11 +2795,9 @@ h6 {
   color: #fff;
 }
 
+/*---------------------INDEX BLOGS START-----------------*/
 .blogs-area {
-  padding: 120px 0 80px 0;
-  font-size: 3.5rem;
-  color: #fff;
-  font-weight: 400;
+  padding: 200px 0;
   /* Common style */
   /* Anchor will cover the whole item by default */
   /* For some effects it will show as a button */
@@ -2808,28 +2806,19 @@ h6 {
   /***** Lily *****/
   /*---------------*/
 }
-@media (max-width: 1599px) {
-  .blogs-area {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 1199px) {
-  .blogs-area {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 991px) {
-  .blogs-area {
-    font-size: 2.1rem;
-  }
-}
-@media (max-width: 639px) {
-  .blogs-area {
-    font-size: 1.8rem;
-  }
-}
-.blogs-area h2 {
+.blogs-area .head {
   text-align: center;
+}
+.blogs-area .head h6 {
+  color: #fff;
+}
+.blogs-area .head h2 {
+  color: #fff;
+}
+.blogs-area .special-btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .blogs-area .grid {
   position: relative;
@@ -2842,7 +2831,27 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px 50px;
+}
+.blogs-area .grid .contents .caption {
+  display: flex;
+  gap: 20px;
+}
+.blogs-area .grid .contents .caption h6 {
+  color: #fff;
+}
+.blogs-area .grid .contents .caption p {
+  color: #7c7979;
+}
+.blogs-area .grid .contents h4 {
+  color: #101010;
+}
+.blogs-area .grid .contents p {
+  text-align: left;
+  color: #fff;
+}
+.blogs-area .grid .contents a {
+  text-decoration: none;
+  color: rgb(209, 35, 35);
 }
 @media (max-width: 991px) {
   .blogs-area .grid .contents {
@@ -2966,4 +2975,392 @@ h6 {
 .blogs-area figure.effect-lily:hover p {
   transition-delay: 0.05s;
   transition-duration: 0.35s;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*---------------------INDEX BLOGS END-----------------*/
+/*------------ BLOGS PAGE STYLE START--------------- */
+.blogs-main-area {
+  padding: 120px 0 80px 0;
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 400;
+  /* Common style */
+  /* Anchor will cover the whole item by default */
+  /* For some effects it will show as a button */
+  /* Individual effects */
+  /*---------------*/
+  /***** Lily *****/
+  /*---------------*/
+}
+@media (max-width: 1599px) {
+  .blogs-main-area {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1199px) {
+  .blogs-main-area {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .blogs-main-area {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 639px) {
+  .blogs-main-area {
+    font-size: 1.8rem;
+  }
+}
+.blogs-main-area h2 {
+  text-align: center;
+}
+.blogs-main-area .grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  list-style: none;
+  text-align: center;
+}
+.blogs-main-area .grid .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 50px;
+}
+@media (max-width: 991px) {
+  .blogs-main-area .grid .contents {
+    align-items: center;
+  }
+}
+.blogs-main-area .grid .contents .btn {
+  margin: 10px 0 20px 0 !important;
+}
+.blogs-main-area .grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  height: 450px;
+  width: 100%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width: 1199px) {
+  .blogs-main-area .grid figure {
+    height: 360px;
+  }
+}
+@media (max-width: 639px) {
+  .blogs-main-area .grid figure {
+    height: 360px;
+  }
+}
+.blogs-main-area .grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+.blogs-main-area .grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  backface-visibility: hidden;
+}
+.blogs-main-area .grid figure figcaption::before,
+.blogs-main-area .grid figure figcaption::after {
+  pointer-events: none;
+}
+.blogs-main-area .grid figure figcaption,
+.blogs-main-area .grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 100%;
+  height: 70%;
+}
+.blogs-main-area .grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.blogs-main-area .grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+.blogs-main-area .grid figure h2 span {
+  font-weight: 800;
+}
+.blogs-main-area .grid figure h2,
+.blogs-main-area .grid figure p {
+  margin: 0;
+}
+.blogs-main-area .grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+.blogs-main-area figure.effect-lily img {
+  max-width: none;
+  width: calc(100% + 50px);
+  opacity: 0.7;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-40px, 0, 0);
+}
+.blogs-main-area figure.effect-lily figcaption {
+  text-align: left;
+}
+.blogs-main-area figure.effect-lily figcaption > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  height: 50%;
+}
+.blogs-main-area figure.effect-lily h2,
+.blogs-main-area figure.effect-lily p {
+  transform: translate3d(0, 40px, 0);
+}
+.blogs-main-area figure.effect-lily h2 {
+  transition: transform 0.35s;
+}
+.blogs-main-area figure.effect-lily p {
+  color: #333;
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.35s;
+}
+.blogs-main-area figure.effect-lily:hover img,
+.blogs-main-area figure.effect-lily:hover p {
+  opacity: 1;
+}
+.blogs-main-area figure.effect-lily:hover img,
+.blogs-main-area figure.effect-lily:hover h2,
+.blogs-main-area figure.effect-lily:hover p {
+  transform: translate3d(0, 0, 0);
+}
+.blogs-main-area figure.effect-lily:hover p {
+  transition-delay: 0.05s;
+  transition-duration: 0.35s;
+}
+
+/*------------ BLOGS PAGE STYLE END--------------- */
+/*-------------CONTACT PAGE START----------------*/
+.header-section {
+  padding: 120px 0 50px 0;
+}
+@media (max-width: 1599px) {
+  .header-section {
+    padding: 100px 0 20px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .header-section {
+    padding: 80px 0 20px 0;
+  }
+}
+@media (max-width: 991px) {
+  .header-section {
+    padding: 60px 0 20px 0;
+  }
+}
+@media (max-width: 639px) {
+  .header-section {
+    padding: 40px 0 40px 0;
+  }
+}
+.header-section h1 {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+@media (max-width: 1599px) {
+  .header-section h1 {
+    font-size: 4.2rem;
+  }
+}
+@media (max-width: 1199px) {
+  .header-section h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .header-section h1 {
+    font-size: 2.9rem;
+  }
+}
+@media (max-width: 639px) {
+  .header-section h1 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 639px) {
+  .header-section h1 {
+    line-height: 60px;
+  }
+}
+.header-section p {
+  color: #fff;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 10px;
+}
+.header-section h6 {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+@media (max-width: 1599px) {
+  .header-section h6 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1199px) {
+  .header-section h6 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 991px) {
+  .header-section h6 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 639px) {
+  .header-section h6 {
+    font-size: 15px;
+  }
+}
+
+.contact-area {
+  padding: 120px 0 80px 0;
+}
+@media (max-width: 639px) {
+  .contact-area {
+    padding: 80px 0 80px 0;
+  }
+}
+@media (max-width: 639px) {
+  .contact-area .contact-details {
+    padding: 0 0;
+  }
+}
+.contact-area .contact-details ul {
+  display: flex;
+  gap: 168px;
+  list-style: none;
+  justify-content: center;
+}
+@media (max-width: 1599px) {
+  .contact-area .contact-details ul {
+    gap: 80px;
+  }
+}
+@media (max-width: 1199px) {
+  .contact-area .contact-details ul {
+    gap: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .contact-area .contact-details ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 639px) {
+  .contact-area .contact-details ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.contact-area .contact-details ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-form-area {
+  padding: 50px 80px;
+}
+@media (max-width: 639px) {
+  .contact-form-area {
+    padding: 0 0;
+  }
+}
+.contact-form-area h5 {
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1599px) {
+  .contact-form-area h5 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1199px) {
+  .contact-form-area h5 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 991px) {
+  .contact-form-area h5 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 639px) {
+  .contact-form-area h5 {
+    font-size: 1rem;
+  }
+}
+.contact-form-area p {
+  color: #fff;
+  line-height: 26px;
+  text-align: center;
+}
+.contact-form-area .forms {
+  padding: 20px 200px;
+}
+@media (max-width: 1599px) {
+  .contact-form-area .forms {
+    padding: 20px 140px;
+  }
+}
+@media (max-width: 1199px) {
+  .contact-form-area .forms {
+    padding: 20px 100px;
+  }
+}
+@media (max-width: 991px) {
+  .contact-form-area .forms {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 639px) {
+  .contact-form-area .forms {
+    padding: 0 0;
+  }
+}
+.contact-form-area .forms .inputt {
+  padding: 10px 0;
+}
+.contact-form-area .forms .inputt form input {
+  width: 100%;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid rgb(179, 179, 179);
+  padding: 7px 15px;
+}
+.contact-form-area .forms .special-btn-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*-------------CONTACT PAGE END----------------*//*# sourceMappingURL=main.css.map */
