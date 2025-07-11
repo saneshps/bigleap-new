@@ -1,0 +1,42 @@
+.about-area {
+
+    padding: 120px 0 80px 0;
+
+    @include respond-below(sm) {
+        padding: 80px 0 80px 0;
+    }
+
+    .about-first-box {
+        display: flex;
+        justify-self: flex-end;
+        align-items: center;
+
+        @include respond-below(sm) {
+            justify-self: center !important;
+
+        }
+
+        img {
+            width: 80%;
+
+            @include respond-below(sm) {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .about-secont-box {
+        @include respond-below(sm) {
+            padding: 20px 0 0 0 !important;
+        }
+
+        h3 {
+            color: #fff;
+            line-height: 47px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

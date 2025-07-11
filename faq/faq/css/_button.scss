@@ -1,0 +1,152 @@
+.btn {
+    color: #282936;
+    font-weight: 700;
+    font-size: 15px !important;
+    padding: 0 50px 0 20px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 13px 25px 10px 45px;
+    border-radius: 0;
+    position: relative;
+    transition: all 0.2s ease 0s;
+    z-index: 1;
+}
+
+.btn:hover {
+    color: #fff;
+    border-color: transparent;
+}
+
+.btn:before,
+.btn:after {
+    color: #fff;
+    content: "\f061";
+    font-weight: 900;
+    font-size: 18px;
+    font-family: "Font Awesome 5 Free";
+    line-height: 48px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    z-index: 0;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    rotate: -30deg;
+}
+
+.btn:after {
+    background: none !important;
+    border: 1px solid #ccc;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 0px;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    z-index: -1;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    rotate: 0deg;
+}
+
+.btn:hover:after {
+    background-color: #8e44ad;
+    width: 100%;
+}
+
+.btn.orange:hover:after {
+    background-color: #EE5A24;
+    width: 100%;
+}
+
+.btn.blue:hover:after {
+    background-color: #273c75;
+    width: 100%;
+}
+
+.btn.magenta:hover:after {
+    background-color: #db2b63;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .btn {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+// ================== button second 
+.btn1 {
+    color: #fff;
+    background: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 3px #ed2124;
+    position: relative;
+    transition: all 0.5s ease 0.2s;
+}
+
+.btn1:focus,
+.btn1:hover {
+    color: #ed2124;
+    background: transparent;
+}
+
+.btn1:before,
+.btn1:after {
+    content: '';
+    border: 0 solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.btn1:before {
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
+
+.btn1:after {
+    border-top-width: 3px;
+    border-right-width: 3px;
+}
+
+.btn1:hover:before,
+.btn1:focus:before,
+.btn1:hover:after,
+.btn1:focus:after {
+    width: 100%;
+    height: 100%;
+    border-color: #fff;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+}
+
+.btn1:focus:before,
+.btn1:hover:before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.btn1:focus:after,
+.btn1:hover:after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+@media only screen and (max-width: 767px) {
+    .btn1 {
+        margin-bottom: 30px;
+    }
+}
+
+// ================== button second
