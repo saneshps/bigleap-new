@@ -1,0 +1,42 @@
+.Portfolio-area {
+    padding: 120px 0 80px 0;
+
+    .special-slider {
+        .portfolio {
+            .swiper-wrapper {
+                .swiper-slide {
+                    h4 {
+                        @include h4;
+                    }
+
+                    p {
+                        @include p;
+                    }
+
+                    .slider-bg-1 {
+                        background: linear-gradient(#28002A, #000000);
+
+
+                    }
+
+                    .slider-bg-2 {
+                        background: linear-gradient(#2A0001, black);
+
+
+                    }
+
+                    .slider-bg-3 {
+                        background: linear-gradient(#12002a, black);
+
+
+                    }
+
+                    .content {
+                        width: 40%;
+                        padding: 70px 0 50px 150px;
+                    }
+                }
+            }
+        }
+    }
+}
