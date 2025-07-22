@@ -1,9 +1,9 @@
 var swiper = new Swiper(".prolatest", {
   slidesPerView: "auto",
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   centeredSlides: true,
   spaceBetween:30,
   pagination: {

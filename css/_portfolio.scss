@@ -75,12 +75,22 @@
 
 .latest-projects {
     padding: 120px 0 80px 0;
+    display: flex;
+    align-items: center;
+
+    @include respond-below(sm) {
+        flex-direction: column;
+    }
 
     .stiky-text {
         position: absolute;
         z-index: 999;
         padding-left: 50px;
-        height: 40%;
+        height: 50%;
+
+        @include respond-below(lg) {
+            height: 40%;
+        }
 
         @include respond-below(md) {
             height: 28%;
@@ -88,7 +98,9 @@
         }
 
         @include respond-below(sm) {
-            padding-left: 20px
+            padding-left: 20px;
+            height: 30%;
+            width: 100%;
         }
 
 
@@ -156,10 +168,10 @@
 
         .swiper-wrapper {
             position: relative;
-            margin-left: 10%;
+            margin-left: 13%;
 
             @include respond-below(xl) {
-                // margin-left: 15%;
+                margin-left: 13%;
             }
 
             @include respond-below(lg) {
@@ -183,7 +195,7 @@
                 display: flex;
                 // justify-content: center;
                 align-items: center;
-                width: 38%;
+                width: 48%;
 
                 @include respond-below(lg) {
                     width: 76%;
@@ -218,14 +230,22 @@
     padding: 120px 0 80px 0;
 
 
-    @include respond-below(lg) {
-        padding: 200px 0 80px 0;
+    @include respond-below(sm) {
+        padding: 100px 0 80px 0;
     }
 
     .videos {
         display: flex;
         align-items: center;
         padding: 0 80px 0 80px;
+
+        @include respond-below(lg) {
+            padding: 0;
+        }
+
+        @include respond-below(md) {
+            padding: 0;
+        }
 
         @include respond-below(sm) {
             padding: 0 0 0 0;
