@@ -75,6 +75,10 @@
         height: 50vh;
     }
 
+    @include respond-below(sm) {
+        height: 20vh;
+    }
+
     img[src="img/animate/Yeeha.png"] {
         display: block;
         margin: 0 auto;
@@ -96,15 +100,27 @@
         left: 0;
         right: 0;
         margin: 0 auto;
-        top: -61%;
-        width: 840px;
+        top: -80%;
+        width: 1100px;
+
+        @include respond-below(xl) {
+            width: 1000px;
+            top: -76%;
+        }
+
+        @include respond-below(lg) {
+            width: 820px;
+            top: -75%;
+        }
 
         @include respond-below(md) {
-            width: 600px;
+            width: 720px;
+            top: -50%;
         }
 
         @include respond-below(sm) {
-            width: 300px;
+            width: 320px;
+            top: -24%;
         }
 
 

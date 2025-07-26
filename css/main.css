@@ -95,6 +95,8 @@ h6 {
   align-items: center;
   justify-content: end;
   margin: 0;
+  position: relative;
+  z-index: 999;
 }
 @media (max-width: 639px) {
   .header-top-area .head-top-contacts ul {
@@ -104,7 +106,7 @@ h6 {
 .header-top-area .head-top-contacts ul li {
   background: #ed2124;
   list-style-type: none;
-  padding: 25px 20px 13px 20px;
+  padding: 15px 20px 13px 20px;
 }
 @media (max-width: 1199px) {
   .header-top-area .head-top-contacts ul li {
@@ -524,6 +526,11 @@ section {
     height: 50vh;
   }
 }
+@media (max-width: 639px) {
+  .hero-area-start {
+    height: 20vh;
+  }
+}
 .hero-area-start img[src="img/animate/Yeeha.png"] {
   display: block;
   margin: 0 auto;
@@ -544,17 +551,31 @@ section {
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: -61%;
-  width: 840px;
+  top: -80%;
+  width: 1100px;
+}
+@media (max-width: 1599px) {
+  .hero-area-start img[src="img/animate/character.png"] {
+    width: 1000px;
+    top: -76%;
+  }
+}
+@media (max-width: 1199px) {
+  .hero-area-start img[src="img/animate/character.png"] {
+    width: 820px;
+    top: -75%;
+  }
 }
 @media (max-width: 991px) {
   .hero-area-start img[src="img/animate/character.png"] {
-    width: 600px;
+    width: 720px;
+    top: -50%;
   }
 }
 @media (max-width: 639px) {
   .hero-area-start img[src="img/animate/character.png"] {
-    width: 300px;
+    width: 320px;
+    top: -24%;
   }
 }
 .hero-area-start #img360 {
