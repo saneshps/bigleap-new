@@ -275,10 +275,10 @@
     }
 }
 
-.header-area {
+.service-details-first-area {
     padding: 120px 0 80px 0;
 
-    .header {
+    .service-details-first {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -302,6 +302,7 @@
                 @include respond-below(md) {
                     width: 60%;
                 }
+
                 @include respond-below(sm) {
                     width: 60%;
                 }
@@ -310,12 +311,12 @@
 
         .content {
             @include respond-below(md) {
-                    padding-top: 20px
-                }
+                padding-top: 20px
+            }
+
             h4 {
                 @include h4;
                 line-height: 50px
-
             }
 
             p {
@@ -387,6 +388,7 @@
             @include respond-below(lg) {
                 padding: 0 30px 0 30px;
             }
+
             @include respond-below(sm) {
                 padding: 0 0 0 0;
             }

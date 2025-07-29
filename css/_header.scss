@@ -119,6 +119,10 @@
         font-size: 15px;
         font-weight: 500;
 
+        &:hover {
+            color: $brand-color;
+        }
+
         @include respond-below(lg) {
             font-size: 14px;
         }
