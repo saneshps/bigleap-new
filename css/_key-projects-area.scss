@@ -13,6 +13,7 @@
                     justify-content: center;
                     display: flex;
                     flex-direction: column;
+                    align-items: flex-start;
                 }
 
                 @include respond-below(sm) {
@@ -48,11 +49,15 @@
 
                     h2 {
                         @include h2;
-                        width: 50%;
-                        line-height: 80px;
+                        width: 68%;
+                        line-height: 100px;
+
+                        @include respond-below(lg) {
+                            line-height: 70px;
+                        }
 
                         @include respond-below(md) {
-                            width: auto;
+                            width: 70%;
                             line-height: 50px;
                         }
 
@@ -129,5 +134,120 @@
                 }
             }
         }
+
+        // ================================================
+
+        .swiper-button-next.custom-arrow-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #ed232a;
+            color: #fff;
+            border: none;
+            border-radius: 40px;
+            box-shadow: -4px 0px 0 0px #fff;
+            padding: 16px 20px;
+            cursor: pointer;
+            width: 60px !important;
+            height: 60px !important;
+            position: absolute;
+            top: 80%;
+            left: 100px;
+            transition:
+                transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+                background 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+            @include respond-below(md) {
+                top: 85%;
+                left: 40%;
+                display: none;
+            }
+        }
+
+        .swiper-button-next.custom-arrow-btn:hover {
+            transform: translate(4px);
+            box-shadow: -4px 1px 8px 2px #ce3636;
+            background: #fff;
+
+            &:after {
+                color: #ed2124;
+            }
+        }
+
+        .swiper-button-next.custom-arrow-btn svg {
+            width: 32px;
+            height: 32px;
+            display: block;
+            stroke: #fff;
+            stroke-width: 4;
+            fill: none;
+        }
+
+        .swiper-button-next.custom-arrow-btn::after {
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            color: #fff;
+        }
+
+
+
+
+        .swiper-button-prev.custom-arrow-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #ed232a;
+            color: #fff;
+            border: none;
+            border-radius: 40px;
+            box-shadow: -4px 0px 0 0px #fff;
+            padding: 16px 20px;
+            cursor: pointer;
+            width: 60px !important;
+            height: 60px !important;
+            position: absolute;
+            top: 80%;
+            left: 10px;
+            transition:
+                transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+                background 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+            @include respond-below(md) {
+                top: 85%;
+                left: 50%;
+                display: none;
+            }
+
+        }
+
+        .swiper-button-prev.custom-arrow-btn:hover {
+            transform: translate(4px);
+            box-shadow: -4px 1px 8px 2px #ce3636;
+            background: #fff;
+
+            &:after {
+                color: #ed2124;
+            }
+        }
+
+        .swiper-button-prev.custom-arrow-btn svg {
+            width: 32px;
+            height: 32px;
+            display: block;
+            stroke: #fff;
+            stroke-width: 4;
+            fill: none;
+        }
+
+
+        .swiper-button-prev.custom-arrow-btn::after {
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            color: #fff;
+        }
+
+        // ================================================
     }
 }
