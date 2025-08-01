@@ -1,0 +1,49 @@
+.title-banner-area {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20%;
+    position: relative;
+
+    @include respond-below(lg) {
+        padding: 200px 50px;
+        height: auto;
+    }
+
+    @include respond-below(md) {
+        padding: 200px 20px;
+        height: auto;
+    }
+
+    @include respond-below(sm) {
+        padding: 100px 20px;
+        height: auto;
+    }
+
+    h1 {
+        @include h1;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        font-size: 4rem !important;
+
+        @include respond-below(lg) {
+            line-height: 90px;
+            font-size: 3rem !important;
+        }
+
+        @include respond-below(md) {
+            line-height: 90px;
+            font-size: 3rem !important;
+        }
+
+        @include respond-below(sm) {
+            line-height: 60px;
+            font-size: 2rem !important;
+        }
+    }
+
+
+}
