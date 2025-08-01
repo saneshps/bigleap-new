@@ -1,7 +1,7 @@
 /*---------------------INDEX BLOGS START-----------------*/
 
 .blogs-area {
-    padding: 200px 0;
+    @include section;
 
     .head {
         text-align: center;

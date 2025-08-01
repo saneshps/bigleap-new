@@ -1,4 +1,6 @@
 .enquiry-area {
+    @include section;
+
     .enquire-bg {
         position: relative;
 
@@ -23,86 +25,116 @@
         .btn {
             position: absolute;
             bottom: 0;
-            left: 600px;
-            top: 40%;
-            padding: 2em;
-            height: 50%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            // @include respond-below(xl) {
-            //     left: 580px;
-            // }
 
-            @include respond-below(lg) {
-                left: 400px;
-            }
-
-            @include respond-below(md) {
-                left: 250px;
-                top: 35%;
-            }
-
-            @include respond-below(sm) {
-                top: 50px;
-                left: 80px;
-            }
         }
     }
 
     .fade {
         .modal-dialog {
-            width: 60%;
+            max-width: 60%;
             margin: auto;
 
             @include respond-below(xl) {
-                width: 80%;
+                max-width: 80%;
             }
 
             @include respond-below(lg) {
-                width: 80%;
+                max-width: 80%;
             }
 
             @include respond-below(md) {
-                width: 90%;
+                max-width: 90%;
             }
 
             @include respond-below(sm) {
-                width: 90%;
+                max-width: 90%;
             }
 
             .modal-content {
                 .modal-header {
-                    .modal-title {}
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    background: $brand-color;
+
+                    .modal-title {
+                        text-align: center !important;
+                        width: 100%;
+                        color: #fff;
+
+                        element.style {}
+
+                        .enquiry-area .fade .modal-dialog .modal-content .modal-header .modal-title {
+                            text-align: center !important;
+                            width: 100%;
+                            color: #fff;
+
+                        }
+                    }
+
+                    .close {
+                        padding: 1rem;
+                        margin: -1rem -1rem -1rem auto;
+                        color: #ffffff;
+                        opacity: 1;
+                        font-weight: 300;
+                        font-size: 40px;
+                        outline: none;
+                    }
+
                 }
+
 
                 .modal-body {
                     .inputt {
-                        padding: 40px 20px;
+                        padding: 10px 20px;
 
                         @include respond-below(sm) {
-                            padding: 20px 20px;
+                            padding: 3px 0px;
                         }
 
                         form {
                             input {
                                 width: 100%;
+                                margin: 0 0 20px 0;
+                                padding: 8px 0;
                                 border-top: none;
                                 border-left: none;
                                 border-right: none;
-                                border-bottom: 1px solid black;
+                                box-sizing: unset;
                                 outline: none;
+                                border-bottom: 1px solid red;
                             }
                         }
                     }
                 }
 
+
                 .foot {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+                    button {
+                        padding: 0;
+                        border-radius: 30px;
+                        color: #fff;
+
+                        &:hover {
+                            color: #000;
+                            background-color: $brand-color;
+                        }
+                    }
                 }
             }
         }
     }
-
-
 }

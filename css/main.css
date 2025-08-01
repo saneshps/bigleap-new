@@ -2224,6 +2224,29 @@ section {
   color: #fff;
 }
 
+.enquiry-area {
+  padding: 120px 0 50px 0;
+}
+@media (max-width: 1599px) {
+  .enquiry-area {
+    padding: 100px 0 20px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .enquiry-area {
+    padding: 80px 0 20px 0;
+  }
+}
+@media (max-width: 991px) {
+  .enquiry-area {
+    padding: 60px 0 20px 0;
+  }
+}
+@media (max-width: 639px) {
+  .enquiry-area {
+    padding: 40px 0 40px 0;
+  }
+}
 .enquiry-area .enquire-bg {
   position: relative;
 }
@@ -2251,72 +2274,95 @@ section {
 .enquiry-area .enquire-bg .btn {
   position: absolute;
   bottom: 0;
-  left: 600px;
-  top: 40%;
-  padding: 2em;
-  height: 50%;
-}
-@media (max-width: 1199px) {
-  .enquiry-area .enquire-bg .btn {
-    left: 400px;
-  }
-}
-@media (max-width: 991px) {
-  .enquiry-area .enquire-bg .btn {
-    left: 250px;
-    top: 35%;
-  }
-}
-@media (max-width: 639px) {
-  .enquiry-area .enquire-bg .btn {
-    top: 50px;
-    left: 80px;
-  }
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .enquiry-area .fade .modal-dialog {
-  width: 60%;
+  max-width: 60%;
   margin: auto;
 }
 @media (max-width: 1599px) {
   .enquiry-area .fade .modal-dialog {
-    width: 80%;
+    max-width: 80%;
   }
 }
 @media (max-width: 1199px) {
   .enquiry-area .fade .modal-dialog {
-    width: 80%;
+    max-width: 80%;
   }
 }
 @media (max-width: 991px) {
   .enquiry-area .fade .modal-dialog {
-    width: 90%;
+    max-width: 90%;
   }
 }
 @media (max-width: 639px) {
   .enquiry-area .fade .modal-dialog {
-    width: 90%;
+    max-width: 90%;
   }
 }
+.enquiry-area .fade .modal-dialog .modal-content .modal-header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #ed2124;
+}
+.enquiry-area .fade .modal-dialog .modal-content .modal-header .modal-title {
+  text-align: center !important;
+  width: 100%;
+  color: #fff;
+}
+.enquiry-area .fade .modal-dialog .modal-content .modal-header .modal-title .enquiry-area .fade .modal-dialog .modal-content .modal-header .modal-title {
+  text-align: center !important;
+  width: 100%;
+  color: #fff;
+}
+.enquiry-area .fade .modal-dialog .modal-content .modal-header .close {
+  padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 300;
+  font-size: 40px;
+  outline: none;
+}
 .enquiry-area .fade .modal-dialog .modal-content .modal-body .inputt {
-  padding: 40px 20px;
+  padding: 10px 20px;
 }
 @media (max-width: 639px) {
   .enquiry-area .fade .modal-dialog .modal-content .modal-body .inputt {
-    padding: 20px 20px;
+    padding: 3px 0px;
   }
 }
 .enquiry-area .fade .modal-dialog .modal-content .modal-body .inputt form input {
   width: 100%;
+  margin: 0 0 20px 0;
+  padding: 8px 0;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid black;
+  box-sizing: unset;
   outline: none;
+  border-bottom: 1px solid red;
 }
 .enquiry-area .fade .modal-dialog .modal-content .foot {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.enquiry-area .fade .modal-dialog .modal-content .foot button {
+  padding: 0;
+  border-radius: 30px;
+  color: #fff;
+}
+.enquiry-area .fade .modal-dialog .modal-content .foot button:hover {
+  color: #000;
+  background-color: #ed2124;
 }
 
 .footer-area {
@@ -3688,7 +3734,7 @@ section {
 
 /*---------------------INDEX BLOGS START-----------------*/
 .blogs-area {
-  padding: 200px 0;
+  padding: 120px 0 50px 0;
   /* Common style */
   /* Anchor will cover the whole item by default */
   /* For some effects it will show as a button */
@@ -3696,6 +3742,26 @@ section {
   /*---------------*/
   /***** Lily *****/
   /*---------------*/
+}
+@media (max-width: 1599px) {
+  .blogs-area {
+    padding: 100px 0 20px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .blogs-area {
+    padding: 80px 0 20px 0;
+  }
+}
+@media (max-width: 991px) {
+  .blogs-area {
+    padding: 60px 0 20px 0;
+  }
+}
+@media (max-width: 639px) {
+  .blogs-area {
+    padding: 40px 0 40px 0;
+  }
 }
 .blogs-area .head {
   text-align: center;
