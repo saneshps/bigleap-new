@@ -847,6 +847,7 @@ section {
 
 .about-main-section {
   padding: 120px 0 50px 0;
+  position: relative;
 }
 @media (max-width: 1599px) {
   .about-main-section {
@@ -943,6 +944,19 @@ section {
   .about-main-section .abt-cnt p {
     text-align: left !important;
   }
+}
+.about-main-section .shape {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.47;
+}
+.about-main-section .shape img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
 }
 
 .specialize-area {
@@ -2113,6 +2127,7 @@ section {
 
 .difference-area {
   padding: 120px 0 50px 0;
+  position: relative;
 }
 @media (max-width: 1599px) {
   .difference-area {
@@ -2234,6 +2249,19 @@ section {
 }
 .difference-area .difference p {
   color: #fff;
+}
+.difference-area .shape {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.47;
+}
+.difference-area .shape img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
 }
 
 .enquiry-area {
@@ -2918,9 +2946,22 @@ section {
 .history-area .special-slider .history .swiper-wrapper .swiper-slide p {
   color: #fff;
 }
+.history-area .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.history-area .shape img {
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
 
 .team-area {
   padding: 120px 0 50px 0;
+  position: relative;
   /* Anchor will cover the whole item by default */
   /* For some effects it will show as a button */
 }
@@ -2976,7 +3017,6 @@ section {
   clear: both;
   margin: 0 auto;
   padding: 1em 0 4em;
-  max-width: 1000px;
   list-style: none;
   text-align: center;
 }
@@ -3004,12 +3044,30 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 10px 30px;
+}
+@media (max-width: 1599px) {
+  .team-area .grid .content {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .team-area .grid .content {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 639px) {
+  .team-area .grid .content {
+    padding: 10px 0px;
+  }
 }
 .team-area .grid .content h6 {
   color: #fff;
+  padding: 10px 0 0 10px;
 }
 .team-area .grid .content p {
   color: #fff;
+  padding: 5px 0 0 10px;
 }
 .team-area .grid figure {
   position: relative;
@@ -3071,7 +3129,7 @@ section {
   font-size: 68.5%;
 }
 .team-area figure.effect-selena {
-  background: #fff;
+  background: #ed2124;
 }
 .team-area figure.effect-selena img {
   opacity: 0.95;
@@ -3097,6 +3155,19 @@ section {
 .team-area figure.effect-selena:hover p {
   opacity: 1;
   transform: perspective(1000px) rotate3d(1, 0, 0, 0);
+}
+.team-area .shape {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.47;
+}
+.team-area .shape img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
 }
 
 .service-main-area {

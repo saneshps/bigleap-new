@@ -1,5 +1,6 @@
 .team-area {
     @include section;
+    position: relative;
 
     h2 {
         @include h2;
@@ -12,7 +13,6 @@
         clear: both;
         margin: 0 auto;
         padding: 1em 0 4em;
-        max-width: 1000px;
         list-style: none;
         text-align: center;
 
@@ -31,15 +31,33 @@
         @include respond-below(sm) {
             padding: 0 !important;
         }
-        .content{
+
+        .content {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            h6{
-                color: #fff;
+            padding: 10px 30px;
+
+            @include respond-below(xl) {
+                padding: 10px 20px;
             }
-            p{
+
+            @include respond-below(lg) {
+                padding: 10px 10px;
+            }
+
+            @include respond-below(sm) {
+                padding: 10px 0px;
+            }
+
+            h6 {
                 color: #fff;
+                padding: 10px 0 0 10px;
+            }
+
+            p {
+                color: #fff;
+                padding: 5px 0 0 10px;
             }
         }
 
@@ -125,7 +143,7 @@
     // salena 
 
     figure.effect-selena {
-        background: #fff;
+        background: $brand-color;
     }
 
     figure.effect-selena img {
@@ -167,5 +185,20 @@
         opacity: 1;
         -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0);
         transform: perspective(1000px) rotate3d(1, 0, 0, 0);
+    }
+
+    .shape {
+        position: absolute;
+        top: -50%;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: .47;
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
     }
 }
