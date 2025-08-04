@@ -1,36 +1,17 @@
 .instagram-area {
     position: relative;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
 
     .instagram-icon {
         position: absolute;
-        top: 30%;
-        left: 50%;
+        left: 0;
+        right: 0;
         z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
 
-        @include respond-below(xl) {
-            left: 47% !important;
-            top: 23% !important;
-
-        }
-
-        @include respond-below(lg) {
-            left: 45% !important;
-            top: 19% !important;
-
-        }
-
-        @include respond-below(md) {
-            left: 44% !important;
-            top: 18% !important;
-
-        }
-
-        @include respond-below(sm) {
-            left: 38% !important;
-            top: 18% !important;
-
-        }
 
         img {
             width: 100px;
@@ -49,6 +30,16 @@
                 .swiper-slide {
                     img {
                         width: 100%;
+                        height: 240px;
+                        object-fit: cover;
+
+                        @include respond-below (xl) {
+                            height: 190px;
+                        }
+
+                        @include respond-below (lg) {
+                            height: 200px;
+                        }
                     }
                 }
             }

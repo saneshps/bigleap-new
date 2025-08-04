@@ -2755,37 +2755,17 @@ section {
 
 .instagram-area {
   position: relative;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 .instagram-area .instagram-icon {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  left: 0;
+  right: 0;
   z-index: 999;
-}
-@media (max-width: 1599px) {
-  .instagram-area .instagram-icon {
-    left: 47% !important;
-    top: 23% !important;
-  }
-}
-@media (max-width: 1199px) {
-  .instagram-area .instagram-icon {
-    left: 45% !important;
-    top: 19% !important;
-  }
-}
-@media (max-width: 991px) {
-  .instagram-area .instagram-icon {
-    left: 44% !important;
-    top: 18% !important;
-  }
-}
-@media (max-width: 639px) {
-  .instagram-area .instagram-icon {
-    left: 38% !important;
-    top: 18% !important;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .instagram-area .instagram-icon img {
   width: 100px;
@@ -2799,6 +2779,19 @@ section {
 }
 .instagram-area .special-slider .instagram .swiper-wrapper .swiper-slide img {
   width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1599px) {
+  .instagram-area .special-slider .instagram .swiper-wrapper .swiper-slide img {
+    height: 190px;
+  }
+}
+@media (max-width: 1199px) {
+  .instagram-area .special-slider .instagram .swiper-wrapper .swiper-slide img {
+    height: 200px;
+  }
 }
 
 .history-area {
@@ -3279,11 +3272,15 @@ section {
 }
 .service-provide-area h2 {
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
-@media (max-width: 639px) {
-  .service-provide-area h2 {
-    line-height: 50px;
+.service-provide-area h2 span {
+  font-family: "Boldonse", system-ui !important;
+  font-size: 4rem !important;
+}
+@media (max-width: 1599px) {
+  .service-provide-area h2 span {
+    font-size: 4rem !important;
   }
 }
 .service-provide-area .grid {
@@ -3684,7 +3681,7 @@ section {
   font-size: 3.5rem;
   color: #fff;
   font-weight: 400;
-  line-height: 70px;
+  line-height: 90px;
   text-align: center;
 }
 @media (max-width: 1599px) {
@@ -3707,6 +3704,16 @@ section {
     font-size: 1.8rem;
   }
 }
+@media (max-width: 1599px) {
+  .paragraph-area .paragraph .para-head h2 {
+    line-height: 80px;
+  }
+}
+@media (max-width: 1199px) {
+  .paragraph-area .paragraph .para-head h2 {
+    line-height: 60px;
+  }
+}
 @media (max-width: 991px) {
   .paragraph-area .paragraph .para-head h2 {
     text-align: center;
@@ -3717,6 +3724,10 @@ section {
     line-height: 50px;
     text-align: left;
   }
+}
+.paragraph-area .paragraph .para-head h2 span {
+  color: #ed2124;
+  font-family: "Boldonse", system-ui !important;
 }
 .paragraph-area .paragraph .para-content {
   padding: 20px 0;

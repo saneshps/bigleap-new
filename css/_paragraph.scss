@@ -1,5 +1,6 @@
 .paragraph-area {
     padding: 120px 0;
+
     .paragraph {
 
         padding: 0 60px;
@@ -25,8 +26,16 @@
         .para-head {
             h2 {
                 @include h2;
-                line-height: 70px;
+                line-height: 90px;
                 text-align: center;
+
+                @include respond-below(xl) {
+                    line-height: 80px;
+                }
+
+                @include respond-below(lg) {
+                    line-height: 60px;
+                }
 
                 @include respond-below(md) {
                     text-align: center;
@@ -35,6 +44,11 @@
                 @include respond-below(sm) {
                     line-height: 50px;
                     text-align: left;
+                }
+
+                span {
+                    color: $brand-color;
+                    font-family: "Boldonse", system-ui !important;
                 }
             }
         }

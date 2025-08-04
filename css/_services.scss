@@ -49,10 +49,15 @@
 
     h2 {
         color: #fff;
-        text-align: center;
+        text-align: left;
 
-        @include respond-below(sm) {
-            line-height: 50px;
+        span {
+            font-family: "Boldonse", system-ui !important;
+            font-size: 4rem !important;
+
+            @include respond-below(xl) {
+                font-size: 4rem !important;
+            }
         }
     }
 
@@ -265,7 +270,6 @@
 
     h1 {
         @include h1;
-        // color: white;
         text-align: center;
         line-height: 100px;
 
