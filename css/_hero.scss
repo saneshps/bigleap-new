@@ -1,10 +1,287 @@
-.hero-area-start {
-    .hero-video {
+.hanging-swing-in {
+    animation: hang 4s ease-in-out forwards;
+}
 
-        video {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
+.hanging-swing-out {
+    animation: hang-out 3s ease-in-out forwards;
+}
+
+@keyframes hang {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    7% {
+        transform: rotate(-1.2deg);
+    }
+
+    26% {
+        transform: rotate(34.7deg);
+    }
+
+    50% {
+        transform: rotate(28.1deg);
+    }
+
+    71% {
+        transform: rotate(30.7deg);
+    }
+
+    93% {
+        transform: rotate(29.7deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes hang-out {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    7% {
+        transform: rotate(31.2deg);
+    }
+
+    26% {
+        transform: rotate(-4.7deg);
+    }
+
+    50% {
+        transform: rotate(1.9deg);
+    }
+
+    71% {
+        transform: rotate(-0.7deg);
+    }
+
+    93% {
+        transform: rotate(0.3);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.hero-area-start {
+    height: 90vh;
+
+
+    @include respond-below(md) {
+        height: 50vh;
+    }
+
+    @include respond-below(sm) {
+        height: 20vh;
+    }
+
+    img[src="img/animate/Yeeha.png"] {
+        display: block;
+        margin: 0 auto;
+        transform-origin: top center;
+        filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.15));
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    img[src="img/animate/character.png"] {
+        display: block;
+        margin: 0 auto;
+        transform-origin: top center;
+        filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.15));
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: -80%;
+        width: 1100px;
+
+        @include respond-below(xl) {
+            width: 1000px;
+            top: -76%;
         }
+
+        @include respond-below(lg) {
+            width: 820px;
+            top: -75%;
+        }
+
+        @include respond-below(md) {
+            width: 720px;
+            top: -50%;
+        }
+
+        @include respond-below(sm) {
+            width: 320px;
+            top: -24%;
+        }
+
+
+    }
+
+
+    #img360 {
+        position: absolute;
+        right: 100px;
+        top: 100px;
+        width: 600px;
+    }
+
+    img[src="img/animate/Yeeha.png"]:hover {
+        animation: hanging-sway-opposite 0.8s infinite alternate ease-in-out;
+    }
+
+    // img[src="img/animate/character.png"]:hover {
+    //     animation: hanging-sway 0.8s infinite alternate ease-in-out;
+    // }
+
+    // .hanging-images img[src="img/animate/Yeeha.png"] {
+    //     /* ...existing styles... */
+    // }
+
+    // .hanging-images img[src="img/animate/character.png"] {
+    //     /* ...existing styles... */
+    // }
+
+    // .hanging-images:hover img[src="img/animate/Yeeha.png"] {
+    //     animation: hanging-sway-opposite 0.8s infinite alternate ease-in-out;
+    // }
+
+    // .hanging-images:hover img[src="img/animate/character.png"] {
+    //     animation: hanging-sway 0.8s infinite alternate ease-in-out;
+    // }
+
+    // @keyframes hanging-sway {
+    //     0% {
+    //         transform: rotate(-10deg);
+    //     }
+
+    //     100% {
+    //         transform: rotate(10deg);
+    //     }
+    // }
+
+    // @keyframes hanging-sway-opposite {
+    //     0% {
+    //         transform: rotate(20deg);
+    //     }
+
+    //     100% {
+    //         transform: rotate(-20deg);
+    //     }
+    // }
+
+
+    // .sway {
+    //     animation: hanging-sway 0.8s infinite alternate ease-in-out;
+    // }
+
+
+    // @keyframes landing {
+    //     0% {
+    //         transform: translateX(-120px) scale(0.8);
+    //         opacity: 0;
+    //     }
+
+    //     70% {
+    //         transform: translateX(10px) scale(1.05);
+    //         opacity: 1;
+    //     }
+
+    //     100% {
+    //         transform: translateX(0) scale(1);
+    //         opacity: 1;
+    //     }
+    // }
+
+    // .landing-animate {
+    //     animation: landing 0.5s cubic-bezier(.68, -0.55, .27, 1.55);
+    // }
+
+    /* ...existing code... */
+    // @keyframes hanging-damped {
+    //     0% {
+    //         transform: translateX(0) rotate(0deg);
+    //     }
+
+    //     10% {
+    //         transform: translateX(300px) rotate(40deg);
+    //     }
+
+    //     20% {
+    //         transform: translateX(-300px) rotate(-38deg);
+    //     }
+
+    //     30% {
+    //         transform: translateX(240px) rotate(32deg);
+    //     }
+
+    //     40% {
+    //         transform: translateX(-200px) rotate(-28deg);
+    //     }
+
+    //     50% {
+    //         transform: translateX(140px) rotate(22deg);
+    //     }
+
+    //     60% {
+    //         transform: translateX(-80px) rotate(-16deg);
+    //     }
+
+    //     70% {
+    //         transform: translateX(40px) rotate(10deg);
+    //     }
+
+    //     80% {
+    //         transform: translateX(-20px) rotate(-6deg);
+    //     }
+
+    //     90% {
+    //         transform: translateX(10px) rotate(2deg);
+    //     }
+
+    //     100% {
+    //         transform: translateX(0) rotate(0deg);
+    //     }
+    // }
+
+    // #yeeha-img.swing-damped {
+    //     animation: hanging-damped 2s cubic-bezier(.25, .1, .25, 1) 1;
+    //     transform-origin: top center;
+    // }
+
+    /*============= */
+
+    // @keyframes swing-in-right {
+    //     0% {
+    //         transform: translateX(-400px) rotate(-60deg);
+    //         opacity: 0;
+    //     }
+
+    //     60% {
+    //         transform: translateX(40px) rotate(10deg);
+    //         opacity: 1;
+    //     }
+
+    //     80% {
+    //         transform: translateX(-10px) rotate(-4deg);
+    //     }
+
+    //     100% {
+    //         transform: translateX(0) rotate(0deg);
+    //         opacity: 1;
+    //     }
+    // }
+
+    #img360.hanging-swing-in {
+        animation: swing-in-right 1.2s cubic-bezier(.25, .1, .25, 1) both;
+        transform-origin: top center;
     }
 }

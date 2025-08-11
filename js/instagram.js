@@ -17,25 +17,25 @@ var swiper = new Swiper(".instagram", {
       slidesPerView: 2,
       spaceBetween: 10,
     },
-     640: {
+    640: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 4,
-      spaceBetween: 10,
+      spaceBetween: 0,
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     1366: {
-      slidesPerView: 6,
+      slidesPerView: 7,
       spaceBetween: 0,
     },
     1920: {
-      slidesPerView: 4,
-      spaceBetween: 10,
+      slidesPerView: 8,
+      spaceBetween: 0,
     },
   },
 });

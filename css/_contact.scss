@@ -1,0 +1,149 @@
+/*-------------CONTACT PAGE START----------------*/
+
+// HEADER AREA START
+.header-section {
+    @include section;
+
+    h1 {
+        @include h1;
+        text-align: center;
+
+        @include respond-below(sm) {
+            line-height: 60px
+        }
+    }
+
+    p {
+        @include p;
+        text-align: center;
+        padding-top: 10px
+    }
+
+    h6 {
+        @include h6;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+// HEADER AREA END
+
+
+// CONTACT AREA START
+.contact-area {
+    padding: 120px 0 80px 0;
+
+    @include respond-below(sm) {
+        padding: 80px 0 80px 0;
+    }
+
+    .contact-details {
+        // padding: 0 50px;
+
+        @include respond-below(sm) {
+            padding: 0 0;
+        }
+
+        ul {
+            display: flex;
+            gap: 168px;
+            list-style: none;
+            justify-content: center;
+
+            @include respond-below(xl) {
+                gap: 80px;
+            }
+
+            @include respond-below(lg) {
+                gap: 30px;
+            }
+
+            @include respond-below(md) {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            @include respond-below(sm) {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            li {
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// CONTACT AREA END
+
+
+//CONTACT DETAILED FORM START
+
+.contact-form-area {
+    padding: 50px 80px;
+
+    @include respond-below(sm) {
+        padding: 0 0
+    }
+
+    h5 {
+        @include h5;
+        text-align: center;
+    }
+
+    p {
+        @include p;
+        text-align: center;
+    }
+
+    .forms {
+        padding: 20px 200px;
+
+        @include respond-below(xl) {
+            padding: 20px 140px;
+        }
+
+        @include respond-below(lg) {
+            padding: 20px 100px;
+        }
+
+        @include respond-below(md) {
+            padding: 20px 30px;
+        }
+
+        @include respond-below(sm) {
+            padding: 0 0;
+        }
+
+        .inputt {
+            padding: 10px 0;
+
+            form {
+                input {
+                    width: 100%;
+                    background: none;
+                    border-radius: 10px;
+                    border: 1px solid rgb(179, 179, 179);
+                    padding: 7px 15px;
+
+                }
+            }
+        }
+
+        .special-btn-box {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}
+
+
+// CONTACT DETAILED FORM END
+
+
+/*-------------CONTACT PAGE END----------------*/

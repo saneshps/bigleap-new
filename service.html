@@ -35,12 +35,118 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--// bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- ==========================
+        HEADER SECTION START
+     ========================== -->
+    <section class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-6 col-md-12 col-12"></div>
+                <div class="col-xl-5 col-lg-6 col-md-12 col-12">
+                    <div class="head-top-contacts">
+                        <ul>
+                            <li> <a href="mailto:info@bigleap.ae"> <i class="fa fa-envelope"></i> info@bigleap.ae</a>
+                            </li>
+                            <li> <a href="tel:+123456789"> <i class="fa fa-phone"></i> +971 05 6646 464 </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shape -->
+        <div class="shape">
+            <img src="/img/shapes/corner-left.png" alt="shapes">
+        </div>
+        <!-- Shape -->
+    </section>
 
+    <header class="header">
+        <div class="container">
+            <nav>
+                <div class="navbar">
+
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- <i class='bx bx-menu'></i> -->
+                    <i class="fa-solid fa-bars bx bx-menu"></i>
+                    <div class="nav-links">
+                        <div class="sidebar-logo">
+                            <span class="logo-name">
+                                <a href="index.html">
+                                    <img src="./img/logo.png" alt="logo">
+                                </a>
+                            </span>
+                            <!-- <i class='bx bx-x'></i> -->
+                            <i class="fa-solid fa-xmark bx bx-x"></i>
+                        </div>
+                        <ul class="links">
+                            <!-- <li>
+                            <a href="#">HTML & CSS</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                            <ul class="htmlCss-sub-menu sub-menu">
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Login Forms</a></li>
+                                <li><a href="#">Card Design</a></li>
+                                <li class="more">
+                                    <span><a href="#">More</a>
+                                        <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                    </span>
+                                    <ul class="more-sub-menu sub-menu">
+                                        <li><a href="#">Neumorphism</a></li>
+                                        <li><a href="#">Pre-loader</a></li>
+                                        <li><a href="#">Glassmorphism</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">JAVASCRIPT</a>
+                            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                            <ul class="js-sub-menu sub-menu">
+                                <li><a href="#">Dynamic Clock</a></li>
+                                <li><a href="#">Form Validation</a></li>
+                                <li><a href="#">Card Slider</a></li>
+                                <li><a href="#">Complete Website</a></li>
+                            </ul>
+                        </li> -->
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="service.html">SERVICES</a></li>
+                            <li><a href="portfolio.html">PORTFOLIO</a></li>
+                            <li><a href="blogs.html">BLOG</a></li>
+                            <li><a href="contacts.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ==========================
+        HEADER SECTION END
+     ========================== -->
+
+    <!-- ===============================
+            TITLE BANNER SECTION STRAT
+         =============================== -->
+    <section class="title-banner-area">
+        <h1> Our creativity begins where reality ends </h1>
+    </section>
+    <!-- =============================
+            TITLE BANNER SECTION END
+         ============================= -->
 
     <!-- ================
  SERVICE MAIN START
@@ -93,7 +199,7 @@
 
     <section class="service-provide-area">
         <div class="container">
-            <h2>Services We Provide</h2>
+            <h2> <span> Services We Provide </span> </h2>
             <div class="row grid">
                 <div class="col-xl-4 col-lg-6 col-md-12 col-12 ">
                     <div class="content">
@@ -105,13 +211,13 @@
                                     <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                 </div>
-                                <a href="#">View more</a>
+                                <a href="/service-detail-page.html">View more</a>
                             </figcaption>
 
                         </figure>
                         <h6>2D Animation</h6>
                         <div class="special-btn-box btn">
-                            <a href="">LEARN MORE</a>
+                            <a href="/service-detail-page.html">LEARN MORE</a>
 
                         </div>
                     </div>
@@ -123,7 +229,7 @@
                             <img src="/img/services/3D Animation.png" alt="">
                             <figcaption>
                                 <div class="list">
-                                     <p>Lorem ipsum dolor sit amet</p>
+                                    <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                 </div>
@@ -165,7 +271,7 @@
                             <img src="/img/services/Character Design & Rigging.png" alt="">
                             <figcaption>
                                 <div class="list">
-                                     <p>Lorem ipsum dolor sit amet</p>
+                                    <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                 </div>
@@ -186,7 +292,7 @@
                                 alt="">
                             <figcaption>
                                 <div class="list">
-                                     <p>Lorem ipsum dolor sit amet</p>
+                                    <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                 </div>
@@ -206,7 +312,7 @@
                             <img src="/img/services/Motion Graphics.png" alt="">
                             <figcaption>
                                 <div class="list">
-                                     <p>Lorem ipsum dolor sit amet</p>
+                                    <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                 </div>
@@ -226,7 +332,7 @@
                             <img src="/img/services/red machine Product Animation.png" alt="">
                             <figcaption>
                                 <div class="list">
-                                     <p>Lorem ipsum dolor sit amet</p>
+                                    <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                 </div>
@@ -246,7 +352,7 @@
                             <img src="/img/services/Storyboarding & Pre-Production.png" alt="">
                             <figcaption>
                                 <div class="list">
-                                     <p>Lorem ipsum dolor sit amet</p>
+                                    <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                 </div>
@@ -266,7 +372,7 @@
                             <img src="/img/services/VFX & Post Production.png" alt="">
                             <figcaption>
                                 <div class="list">
-                                     <p>Lorem ipsum dolor sit amet</p>
+                                    <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                     <p>Lorem ipsum dolor sit amet</p>
                                 </div>
@@ -296,7 +402,9 @@
         <div class="container">
             <div class="paragraph">
                 <div class="para-head">
-                    <h2>Do You Want to Create an Impact with a Professional & Effective Animated Video?</h2>
+                    <h2>Do You Want to <span> Create</span> an <span> Impact</span> with a Professional & Effective
+                        <span> Animated Video? </span>
+                    </h2>
                 </div>
                 <div class="para-content">
                     <p>Brand Bugs ensure the top-notch level video production services in Dubai with a perfect focus
@@ -403,6 +511,78 @@
         INDUSTRIES SECTION END
         ===================== -->
 
+
+    <!-- ENQUIRY SECTION START -->
+
+    <section class="enquiry-area">
+        <div class="enquire-bg">
+            <img src="/img/enquiry/enquiry.jpeg" alt="">
+            <div class="special-btn-box btn">
+                <a href="" data-toggle="modal" data-target="#exampleModalCenter">CLICK HERE</a>
+
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-width modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">ENQUIRE NOW</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-12 ">
+                                <div class="inputt">
+                                    <form>
+                                        <input type="text" name="name" placeholder="Name">
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-12 ">
+                                <div class="inputt">
+                                    <form>
+                                        <input type="text" name="phone" placeholder="phone">
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+                                <div class="inputt">
+                                    <form>
+                                        <input type="email" name="email" placeholder="Email">
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+                                <div class="inputt">
+                                    <form>
+                                        <input type="text" name="Message" placeholder="Message">
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer foot">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">DONE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- ENQUIRY SECTION END -->
     <!-- ======================
       FOOTER SECTION START
       ================== -->
@@ -478,23 +658,19 @@
     <!-- ==========================
             SCRIPT SECTION START
         ========================== -->
+    <!-- modal -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <!-- modal -->
+
+    <!-- Nav -->
+    <script defer type="text/javascript" src="./js/nav.js"></script>
+    <!-- Nav -->
+    <!-- Sticky -->
+    <script defer type="text/javascript" src="./js/stick.js"></script>
+    <!-- Sticky -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script defer type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-    <!-- modal -->
-    <script defer type="text/javascript"
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-    <!-- modal -->
-
-    <!-- Counter -->
-    <script defer type="text/javascript" src="./js/counter.js"></script>
-    <script defer type="text/javascript" src="./js/specialized.js"></script>
-    <script defer type="text/javascript" src="./js/motion.js"></script>
-    <script defer type="text/javascript" src="./js/clients.js"></script>
-    <script defer type="text/javascript" src="./js/instagram.js"></script>
-    <script defer type="text/javascript" src="./js/history.js"></script>
-    <!-- Counter -->
     <!-- ==========================
             SCRIPT SECTION END
         ========================== -->

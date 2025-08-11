@@ -56,6 +56,7 @@
 // ====================================== ABOUT PAGE START =======================================
 .about-main-section {
     @include section;
+    position: relative;
 
     .about-sect {
         display: flex;
@@ -115,6 +116,20 @@
         }
     }
 
+    .shape {
+        position: absolute;
+        top: -50%;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: .47;
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
+    }
 
 }
 

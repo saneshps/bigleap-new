@@ -1,0 +1,140 @@
+.enquiry-area {
+    @include section;
+
+    .enquire-bg {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+
+            @include respond-below(lg) {
+                height: auto;
+            }
+
+            @include respond-below(md) {
+                height: auto;
+            }
+
+            @include respond-below(sm) {
+                height: auto;
+            }
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+    }
+
+    .fade {
+        .modal-dialog {
+            max-width: 60%;
+            margin: auto;
+
+            @include respond-below(xl) {
+                max-width: 80%;
+            }
+
+            @include respond-below(lg) {
+                max-width: 80%;
+            }
+
+            @include respond-below(md) {
+                max-width: 90%;
+            }
+
+            @include respond-below(sm) {
+                max-width: 90%;
+            }
+
+            .modal-content {
+                .modal-header {
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    background: $brand-color;
+
+                    .modal-title {
+                        text-align: center !important;
+                        width: 100%;
+                        color: #fff;
+
+                        element.style {}
+
+                        .enquiry-area .fade .modal-dialog .modal-content .modal-header .modal-title {
+                            text-align: center !important;
+                            width: 100%;
+                            color: #fff;
+
+                        }
+                    }
+
+                    .close {
+                        padding: 1rem;
+                        margin: -1rem -1rem -1rem auto;
+                        color: #ffffff;
+                        opacity: 1;
+                        font-weight: 300;
+                        font-size: 40px;
+                        outline: none;
+                    }
+
+                }
+
+
+                .modal-body {
+                    .inputt {
+                        padding: 10px 20px;
+
+                        @include respond-below(sm) {
+                            padding: 3px 0px;
+                        }
+
+                        form {
+                            input {
+                                width: 100%;
+                                margin: 0 0 20px 0;
+                                padding: 8px 0;
+                                border-top: none;
+                                border-left: none;
+                                border-right: none;
+                                box-sizing: unset;
+                                outline: none;
+                                border-bottom: 1px solid red;
+                            }
+                        }
+                    }
+                }
+
+
+                .foot {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    button {
+                        padding: 0;
+                        border-radius: 30px;
+                        color: #fff;
+
+                        &:hover {
+                            color: #000;
+                            background-color: $brand-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -18,6 +18,8 @@ body {
 
 }
 
+
+
 .main-box {
     margin: 0 5% !important;
 
@@ -314,14 +316,12 @@ h6 {
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // A map of breakpoints.
-$breakpoints: (
-    xs: 375px,
+$breakpoints: (xs: 375px,
     sm: 640px,
     md: 992px,
     lg: 1200px,
     xl: 1600px,
-    custom-tablet: 768px
-);
+    custom-tablet: 768px);
 
 
 //

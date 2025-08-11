@@ -1,10 +1,9 @@
-var swiper = new Swiper(".bigleap", {
+var swiper = new Swiper(".portfolio", {
   spaceBetween: 30,
-  centeredSlides: true,
-  // autoplay: {
-  //     delay: 7500,
-  //     disableOnInteraction: false,
-  // },
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -14,25 +13,21 @@ var swiper = new Swiper(".bigleap", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 50,
-    },
     640: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 1,
-      spaceBetween: 80,
+      slidesPerView: 2,
+      spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 1,
+      slidesPerView: 3,
       spaceBetween: 50,
     },
     1366: {
       slidesPerView: 1,
-      spaceBetween: 60,
+      spaceBetween: 20,
     },
     1920: {
       slidesPerView: 1,
